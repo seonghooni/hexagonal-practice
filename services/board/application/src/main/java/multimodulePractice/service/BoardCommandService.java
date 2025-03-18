@@ -3,7 +3,6 @@ package multimodulePractice.service;
 import static multimodulePactice.BoardCommandErrorCode.BOARD_NOT_FOUND;
 import static multimodulePactice.BoardCommandErrorCode.DEFAULT;
 
-
 import lombok.RequiredArgsConstructor;
 import multimodulePractice.Board;
 import multimodulePractice.port.BoardCommandPort;

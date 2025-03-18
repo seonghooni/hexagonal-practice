@@ -1,6 +1,6 @@
 package multimodulePractice.exeption;
 
-import me.nettee.common.exeption.response.ApiErrorResponse;
+import multimodulePractice.exeption.response.ApiErrorResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

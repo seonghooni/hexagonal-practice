@@ -1,8 +1,11 @@
 package multimodulePractice;
 
-public class Main {
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+@SpringBootApplication(scanBasePackages = "multimodulePractice")
+public class Main {
+        public static void main(String[] args) {
+                SpringApplication.run(Main.class, args);
+        }
 }

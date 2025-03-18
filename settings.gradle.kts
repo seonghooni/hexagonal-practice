@@ -1,5 +1,10 @@
+pluginManagement { repositories { gradlePluginPortal() } }
+
 rootProject.name = "example"
 include(":monolithic")
+
+include(":core")
+
 include(":common")
 
 include(":board")
@@ -33,4 +38,10 @@ project(":board:driven:entity").projectDir = file("services/board/driven/entity"
 
 include(":board:driven:RDB")
 project(":board:driven:RDB").projectDir = file("services/board/driven/RDB")
-include("core")
+
+// module - board/driving
+include(":board:driving")
+project(":board:driving").projectDir = file("services/board/driving")
+
+include(":board:driving:web")
+project(":board:driving:web").projectDir = file("services/board/driving/web")

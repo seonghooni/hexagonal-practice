@@ -1,15 +1,16 @@
 package multimodulePractice.service;
 
-import static me.nettee.board.application.exception.BoardQueryErrorCode.BOARD_NOT_FOUND;
+
+import static multimodulePactice.BoardQueryErrorCode.BOARD_NOT_FOUND;
 
 import java.util.Set;
 import lombok.RequiredArgsConstructor;
-import me.nettee.board.application.domain.type.BoardStatus;
-import me.nettee.board.application.model.BoardQueryModels.BoardDetail;
-import me.nettee.board.application.model.BoardQueryModels.BoardSummary;
-import me.nettee.board.application.port.BoardQueryPort;
-import me.nettee.board.application.usecase.BoardReadByStatusesUseCase;
-import me.nettee.board.application.usecase.BoardReadUseCase;
+import multimodulePactice.BoardQueryModels.BoardDetail;
+import multimodulePactice.BoardQueryModels.BoardSummary;
+import multimodulePractice.port.BoardQueryPort;
+import multimodulePractice.type.BoardStatus;
+import multimodulePractice.usecase.BoardReadByStatusesUseCase;
+import multimodulePractice.usecase.BoardReadUseCase;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

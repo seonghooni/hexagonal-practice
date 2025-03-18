@@ -1,18 +1,18 @@
 package multimodulePactice;
-
-import static me.nettee.board.adapter.driven.persistence.entity.QBoardEntity.boardEntity;
+import static multimodulePactice.QBoardEntity.boardEntity;
 
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
-import me.nettee.board.adapter.driven.persistence.entity.type.BoardEntityStatus;
-import me.nettee.board.adapter.driven.persistence.mapper.BoardEntityMapper;
-import me.nettee.board.application.domain.type.BoardStatus;
-import me.nettee.board.application.model.BoardQueryModels.BoardDetail;
-import me.nettee.board.application.model.BoardQueryModels.BoardSummary;
-import me.nettee.board.application.port.BoardQueryPort;
+
+import multimodulePactice.BoardQueryModels.BoardDetail;
+import multimodulePactice.BoardQueryModels.BoardSummary;
+import multimodulePactice.mapper.BoardEntityMapper;
+import multimodulePactice.type.BoardEntityStatus;
+import multimodulePractice.port.BoardQueryPort;
+import multimodulePractice.type.BoardStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;

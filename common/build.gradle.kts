@@ -1,20 +1,13 @@
 plugins {
-    id("java")
-}
-
-group = "multimodulePractice"
-version = "0.0.1-SNAPSHOT"
-
-repositories {
-    mavenCentral()
+    id("org.springframework.boot")
 }
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
-    compileOnly("org.projectlombok:lombok")
-}
 
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
+    compileOnly("org.projectlombok:lombok:1.18.30")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
 }
